@@ -21,7 +21,7 @@ func ToDuration(input string) (time.Duration, error) {
 		if err != nil {
 			return 0, err
 		}
-		duration =+ segmentDuration
+		duration += segmentDuration
 	}
 
 	return duration, nil
