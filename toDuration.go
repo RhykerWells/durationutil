@@ -16,6 +16,19 @@ func ToDuration(input string) (time.Duration, error) {
 	var duration time.Duration
 	r := regexp.MustCompile(`(\d+?)([a-zA-Z]+)`)
 	matches := r.FindAllStringSubmatch(input, -1)
+
+	if len(matches) == 0 {
+		return 0, errors.New("no duration segments found")
+	}
+
+	var matchedSegmentsLength int
+	for _, m := range matches {
+		matchedSegmentsLength += len(m[0])
+	}
+	if matchedSegmentsLength != len(input) {
+		return 0, errors.New("invalid segments found in input")
+	}
+
 	for _, segment := range matches {
 		segmentDuration, err := parseDurationSegment(segment[1], segment[2])
 		if err != nil {
