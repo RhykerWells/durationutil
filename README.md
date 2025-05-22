@@ -4,7 +4,7 @@ A lightweight Go utility package that provides human-readable and compact conver
 
 [![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Go Report Card](https://goreportcard.com/badge/github.com/RhykerWells/durationutil)](https://goreportcard.com/report/github.com/RhykerWells/durationutil)
-[![Go Reference](https://pkg.go.dev/badge/RhykerWells/durationutil.svg)](https://pkg.go.dev/RhykerWells/durationutil)
+[![Go Reference](https://pkg.go.dev/badge/RhykerWells/durationutil.svg)](https://pkg.go.dev/github.com/RhykerWells/durationutil)
 ![GitHub Release](https://img.shields.io/github/v/release/RhykerWells/durationutil)
 
 
