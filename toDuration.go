@@ -63,7 +63,7 @@ func parseDurationSegment(unitValue, unit string) (time.Duration, error) {
 	case "y":
 		unitDuration = unitDuration * time.Hour * 24 * 365
 	default:
-		return 0, errors.New("couldn't determine duration type of " + unitValue + unit )
+		return 0, errors.New("couldn't determine duration type of " + unitValue + unit)
 	}
 
 	return unitDuration, nil

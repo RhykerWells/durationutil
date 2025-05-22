@@ -33,12 +33,12 @@ func TestToDuration_ValidInputs(t *testing.T) {
 
 func TestToDuration_InvalidInputs(t *testing.T) {
 	tests := []string{
-		"5x",     // unsupported unit
-		"abc",    // invalid format
-		"2.5h",   // decimals not allowed
-		"",       // empty input
-		"1h2",    // number with no unit
-		"1hh",    // invalid unit
+		"5x",   // unsupported unit
+		"abc",  // invalid format
+		"2.5h", // decimals not allowed
+		"",     // empty input
+		"1h2",  // number with no unit
+		"1hh",  // invalid unit
 	}
 
 	for _, input := range tests {
